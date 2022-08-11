@@ -1,0 +1,32 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  margin-bottom: 3rem;
+  height: 100vh;
+  max-height: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .container {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #824342;
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #585858;
+  margin-bottom: 2rem;
+}

@@ -1,7 +1,21 @@
-<h1>All Lists</h1>
-<%= link_to "Create a movie list", lists_new_path %>
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="banner" style="background-color: #FEFFFF;">
+  <div class="container">
+    <h1>
+      <span style="color: #6F530B;">W</span>atch<span style="color: #326055;">L</span>ist<span style="color: #E8907A">.</span>
+    </h1>
+    <p>Bookmarking movies has never been so easy.</p>
+    <%= link_to "Make a list", lists_new_path, class: "btn btn-flat" %>
+  </div>
+</div>
+
+<div class="lists">
+  <div class="container">
+    <ul class="ul-lists">
+      <% @lists.each do |list| %>
+        <li class="card-list">
+            <h2 class="card-list-name"><%= link_to list.name, list_path(list) %></h2>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

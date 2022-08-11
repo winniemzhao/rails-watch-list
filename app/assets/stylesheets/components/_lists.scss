@@ -1,0 +1,25 @@
+.ul-lists {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-list {
+  background-color: #FEFFFF;
+  width: 16rem;
+  height: 8rem;
+  margin: 0 1rem 3rem 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(10,10,10,0.1);
+}
+
+.card-list a {
+  text-decoration: none;
+  color: #326055
+}

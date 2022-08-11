@@ -10,3 +10,11 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: underline;
+}
+
+.nav-link:active {
+  text-decoration-color: #32b0ff;
+}
