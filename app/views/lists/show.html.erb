@@ -1,22 +1,24 @@
-<h1><%= @list.name %></h1>
+<div class="wrapper">
+  <h1><%= @list.name %></h1>
 
-<%= link_to "add a movie", new_list_bookmark_path(@list) %>
-<ul>
-  <% @bookmarks.each do |bookmark| %>
-    <li>
-      <div>
-        <img src="<%= bookmark.movie.poster_url %>" alt="Movie poster" width="100px">
-        <%= bookmark.movie.title %>
-        <%= bookmark.movie.rating %>
-        <%= bookmark.movie.overview %>
+  <%= link_to "add a movie", new_list_bookmark_path(@list) %>
+  <ul>
+    <% @bookmarks.each do |bookmark| %>
+      <li>
         <div>
-          <%= bookmark.comment %>
-          <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete your bookmark?"}, class: "link-danger" %>
+          <img src="<%= bookmark.movie.poster_url %>" alt="Movie poster" width="100px">
+          <%= bookmark.movie.title %>
+          <%= bookmark.movie.rating %>
+          <%= bookmark.movie.overview %>
+          <div>
+            <%= bookmark.comment %>
+            <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete your bookmark?"}, class: "link-danger" %>
+          </div>
         </div>
-      </div>
 
-    </li>
-  <% end %>
-</ul>
+      </li>
+    <% end %>
+  </ul>
 
-<%= link_to "Back to All Lists", lists_path %>
+  <%= link_to "Back to All Lists", lists_path %>
+</div>
