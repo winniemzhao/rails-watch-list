@@ -1,5 +1,5 @@
 <div class="banner" style="background-color: #FEFFFF;">
-  <div class="container">
+  <div class="container wrapper">
     <h1>
       <span style="color: #6F530B;">W</span>atch<span style="color: #326055;">L</span>ist<span style="color: #E8907A">.</span>
     </h1>
@@ -9,8 +9,8 @@
 </div>
 
 <div class="lists">
-  <div class="container">
-    <ul class="ul-lists">
+  <div class="wrapper">
+    <ul class="grid-lists">
       <% @lists.each do |list| %>
         <li class="card-list">
             <h2 class="card-list-name"><%= link_to list.name, list_path(list) %></h2>

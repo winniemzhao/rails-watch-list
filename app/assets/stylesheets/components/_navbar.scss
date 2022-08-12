@@ -1,6 +1,9 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,10 +14,31 @@
   width: 40px;
 }
 
+.nav-content {
+  padding: 1rem 0;
+}
+
+.nav-content ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-link {
+  padding-left: 1rem;
+}
+
 .nav-link:hover, .nav-link:focus {
   text-decoration: underline;
 }
 
 .nav-link:active {
   text-decoration-color: #32b0ff;
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
