@@ -8,12 +8,18 @@
   margin-bottom: 2rem;
 }
 
-.list_name {
-  margin-bottom: 2rem;
+.list_name, .list_photo, .bookmark_movie, .bookmark_comment {
+  margin-bottom: 2rem !important;
 }
 
 .form-link-back {
   text-decoration: none;
   color: rgba(0,0,0,0.3);
   font-size: 0.75rem;
+}
+
+.submit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }

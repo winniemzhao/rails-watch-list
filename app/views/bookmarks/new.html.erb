@@ -4,8 +4,12 @@
       <%= simple_form_for ([@list, @bookmark]) do |f| %>
         <%= f.association :movie, id: "margin-bottom" %>
         <%= f.input :comment, id: "margin-bottom" %>
-        <%= f.submit "Create New Bookmark", class: "btn btn-primary"%>
+        <div class="submit">
+          <%= f.submit "Create New Bookmark", class: "btn btn-primary"%>
+          <%= link_to "Back to #{@list.name}", list_path(@list), class: "form-link-back" %>
+        </div>
+
       <% end %>
-    <%= link_to "Back to #{@list.name}", list_path(@list), class: "form-link-back" %>
+
   </div>
 </div>
