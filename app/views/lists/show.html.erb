@@ -1,9 +1,9 @@
 <div class="wrapper">
+  <div class="banner-list list-info" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= cl_image_path @list.photo.key %>'); background-size: cover; background-position: center;">
+    <h1><%= @list.name %></h1>
+    <%= link_to "add a movie", new_list_bookmark_path(@list), class: "btn-white" %>
+  </div>
   <div class="container-list-cards">
-    <div class="list-info">
-      <h1><%= @list.name %></h1>
-      <%= link_to "add a movie", new_list_bookmark_path(@list), class: "btn-flat" %>
-    </div>
     <div class="container-movie-cards">
       <ul class="grid">
           <% @bookmarks.each do |bookmark| %>
