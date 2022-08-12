@@ -1,10 +1,11 @@
 <div class="wrapper">
-  <div class="container-form">
+  <div class="container-form box-shadow">
     <h1>New Bookmark</h1>
       <%= simple_form_for ([@list, @bookmark]) do |f| %>
-        <%= f.association :movie %>
-        <%= f.input :comment %>
+        <%= f.association :movie, id: "margin-bottom" %>
+        <%= f.input :comment, id: "margin-bottom" %>
         <%= f.submit "Create New Bookmark", class: "btn btn-primary"%>
       <% end %>
+    <%= link_to "Back to #{@list.name}", list_path(@list), class: "form-link-back" %>
   </div>
 </div>

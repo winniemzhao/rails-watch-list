@@ -10,9 +10,9 @@
 
 <div class="lists">
   <div class="wrapper">
-    <ul class="grid-lists">
+    <ul class="grid">
       <% @lists.each do |list| %>
-        <li class="card-list">
+        <li class="card-list box-shadow">
             <h2 class="card-list-name"><%= link_to list.name, list_path(list) %></h2>
         </li>
       <% end %>
